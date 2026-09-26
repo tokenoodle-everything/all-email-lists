@@ -1,14 +1,82 @@
 {
-  "all-email-lists": {
-    "non‑custom‑domain": {
-      "126": "tokenoodle@126.com",
-      "proton": "tokenoodle@proton.me"
+  "metadata": {
+    "schema_version": "1.0.0",
+    "description": "Tokenoodle project official email contact registry",
+    "last_updated": "2026‑09‑26",
+    "notice": "Custom‑domain emails are preferred for all formal communications; non‑custom‑domain addresses serve as emergency backup only."
+  },
+  "all_email_lists": {
+    "non_custom_domain": {
+      "126": {
+        "address": "tokenoodle@126.com",
+        "provider": "126 Mail",
+        "priority": "backup",
+        "availability": "active",
+        "usage_scenarios": [
+          "emergency_contact",
+          "fallback_reception_when_custom_domain_unavailable"
+        ],
+        "notes": "Not for security vulnerability reports or formal business correspondence."
+      },
+      "proton": {
+        "address": "tokenoodle@proton.me",
+        "provider": "Proton Mail",
+        "priority": "backup",
+        "availability": "active",
+        "usage_scenarios": [
+          "emergency_private_communication",
+          "confidential_backup_channel"
+        ],
+        "notes": "Use only if primary custom‑domain channels cannot be reached."
+      }
     },
-    "custom‑domain": [
-      "contact@tokenoodle.com",
-      "developers@tokenoodle.com",
-      "security@tokenoodle.com",
-      "billing@tokenoodle.com"
+    "custom_domain": [
+      {
+        "address": "contact@tokenoodle.com",
+        "priority": "primary",
+        "availability": "active",
+        "usage_scenarios": [
+          "general_inquiry",
+          "partnership",
+          "collaboration",
+          "public_community_feedback"
+        ],
+        "notes": "General‑purpose public contact mailbox for all non‑security topics."
+      },
+      {
+        "address": "developers@tokenoodle.com",
+        "priority": "primary",
+        "availability": "active",
+        "usage_scenarios": [
+          "developer_team_contact",
+          "contributor_inquiry",
+          "code_contribution_discussion",
+          "architecture_proposal"
+        ],
+        "notes": "For development‑related questions from contributors and developers."
+      },
+      {
+        "address": "security@tokenoodle.com",
+        "priority": "primary",
+        "availability": "active",
+        "usage_scenarios": [
+          "security_vulnerability_report",
+          "confidential_security_notification"
+        ],
+        "notes": "**DO NOT submit non‑security issues here**. All vulnerability reports should be sent to this address exclusively."
+      },
+      {
+        "address": "billing@tokenoodle.com",
+        "priority": "primary",
+        "availability": "active",
+        "usage_scenarios": [
+          "billing_inquiry",
+          "payment_issue",
+          "financial_related_support"
+        ],
+        "notes": "For billing, invoice and payment‑related matters only."
+      }
     ]
   }
 }
+
