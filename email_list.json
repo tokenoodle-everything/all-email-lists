@@ -1,0 +1,14 @@
+{
+  "all-email-lists": {
+    "non‑custom‑domain": {
+      "126": "tokenoodle@126.com",
+      "proton": "tokenoodle@proton.me"
+    },
+    "custom‑domain": [
+      "contact@tokenoodle.com",
+      "developers@tokenoodle.com",
+      "security@tokenoodle.com",
+      "billing@tokenoodle.com"
+    ]
+  }
+}
